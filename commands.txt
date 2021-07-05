@@ -1,0 +1,5 @@
+Commands:
+docker build -t="rrawat13/selenium-docker" .
+docker-compose up
+docker-compose up | grep -e 'search-module' -e 'book-flight-module' //run specific tests
+docker-compose up --scale chrome=2 --scale firefox=2 //run tests in parallel
